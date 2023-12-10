@@ -20,6 +20,10 @@ main>nav {
     position: sticky;
     top: 7rem;
     align-self: start;
+
+    /* overflow-y: scroll; */
+    /* min-height: auto; */
+    /* height: 100vh; */
 }
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
@@ -87,6 +91,10 @@ main {
     margin: 0 auto;
 }
 
+#body_content{
+    /* height: 100vh; */
+}
+
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 .content_body {
     /* border: 1px solid black; */
@@ -127,6 +135,10 @@ main {
 .content_image {
     height: 250px;
     width: 500px
+}
+
+.section_nav_text{
+    margin-top: 5px;
 }
 
 
