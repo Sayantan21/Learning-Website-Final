@@ -57,12 +57,11 @@
     <!-- Content Body start -->
     <main>
         <!-- content start -->
-        <div><br>
-            <h1><b>JavaScript tutorial for beginners</b></h1><br><br>
-            <section id="whatisvariable" class="content_body">
+        <div class="container">
+            <!-- <section id="whatisvariable" class="content_body">
                 <h2 style="font-size: 30px;">JavaScript Variables</h2> <br><br>
-                <h2 id="whatisjs" class="topic_heading">What is Variable?</h2>
-                <div>
+                <div class="content_section_container">
+                    <h2 id="whatisjs" class="topic_heading">What is Variable?</h2>
                     <div>
                         <p class="content_text">
                             JavaScript variable is essentially a straightforward name or identifier assigned to a
@@ -76,42 +75,85 @@
                                 <p class="content_text">
                                     <b>Local variables:</b> Declare a variable inside of a block or function.
                                 </p><br>
-                                <pre>
-                                    <code>
-                                        function myFunction() {
-                                            let localVar = "I'm local!";
-                                            console.log(localVar); // Accessible here
-                                          }
-                                          
-                                          console.log(localVar); // Error: localVar is not defined outside the function
-                                          
-                                    </code>
-                                </pre>
                             </li>
                             <li>
                                 <p class="content_text">
                                     <b>Global variables:</b> Declare a variable outside function or with a window
                                     object.
                                 </p><br>
-                                <pre>
-                                    <code>
-                                        let globalVar = "I'm global!";
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
 
-                                        function myFunction() {
-                                            console.log(globalVar); // Accessible within the function
-                                        }
-
-                                        console.log(globalVar); // Accessible outside functions, in global scope
-                                    </code>
-                                </pre>
+            <section id="jscomment" class="content_body">
+                <div class="content_section_container">
+                    <h2 style="font-size: 30px;">JavaScript Comments</h2> <br>
+                    <div>
+                        <p class="content_text">
+                            JavaScript comments are non-executable lines in your code that are used to provide
+                            explanations, document your code, and make it more understandable to yourself and other
+                            developers. Comments are ignored by the JavaScript interpreter, so they don't affect the
+                            behavior of your program. There are two primary ways to add comments in JavaScript
+                        </p><br>
+                        <ul>
+                            <h4>Single-line Comments:</h4>
+                            <li>
+                                <p>Single-line comments are created using two forward slashes ('//').</p>
+                            </li>
+                            <li>
+                                <p>Everything after '//' on the same line is treated as a comment.</p>
+                            </li>
+                        </ul><br>
+                        <ul>
+                            <h3>Multi-line Comments:</h3>
+                            <li>
+                                <p>Multi-line comments, also known as block comments, are enclosed in '/*' and '*/' .
+                                </p>
+                            </li>
+                            <li>
+                                <p>They can span multiple lines and are often used for longer explanations or to
+                                    temporarily exclude blocks of code.</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section id="request-response" class="content_body">
-                <h2 id="historyofjs" class="topic_heading">JavaScript Operators</h2>
-                <div>
+            <section id="jsexpression" class="content_body">
+                <div class="content_section_container">
+                    <h2 style="font-size: 30px;">JavaScript Expression</h2> <br>
+                    <div>
+                        <p class="content_text">
+                            JavaScript expressions are fundamental components of the language that produce values. They
+                            are composed of variables, operators, and sometimes function calls, and they can be as
+                            simple as a single value or much more complex. Expressions are an integral part of
+                            JavaScript, serving as the building blocks for creating functionality and performing various
+                            operations.
+                        </p><br>
+                    </div>
+                </div>
+            </section>
+            <section id="jskeyword" class="content_body">
+                <div class="content_section_container">
+                    <h2 style="font-size: 30px;">JavaScript Keyword</h2> <br>
+                    <div>
+                        <p class="content_text">
+                            JavaScript keywords are reserved words that have specific meanings and purposes within the
+                            JavaScript programming language. These keywords cannot be used as identifiers (such as
+                            variable names or function names) because they are part of the language's syntax and serve
+                            predefined roles. <b>var, let, const, function, if, else, and else if, for, while,
+                                do...while, return, break, continue, typeof</b>.
+                            These are just a few examples of JavaScript keywords. Each keyword plays a specific role in
+                            the language's syntax and helps developers perform various tasks when writing JavaScript
+                            code.
+                        </p><br>
+                    </div>
+                </div>
+            </section>
+            <section id="jsoperator" class="content_body">
+                <div class="content_section_container">
+                    <h2 class="topic_heading">JavaScript Operators</h2>
                     <p class="content_text">
                         JavaScript operators are essential components of the language that allow you to perform various
                         operations on values and variables. These operations can include arithmetic calculations,
@@ -158,7 +200,8 @@
 
                         <li>
                             <p class="content_text">
-                                <b>Strict Equality (===)</b>: Checks if two values are equal in both value and data type.
+                                <b>Strict Equality (===)</b>: Checks if two values are equal in both value and data
+                                type.
                             </p>
                         </li>
 
@@ -170,27 +213,57 @@
 
                         <li>
                             <p class="content_text">
-                                 <b>Greater Than (>)</b>: Checks if the left operand is greater than the right operand.
+                                <b>Greater Than (>)</b>: Checks if the left operand is greater than the right operand.
                             </p>
                         </li>
 
                         <li>
                             <p class="content_text">
-                                 <b>Less Than (<)</b>: Checks if the left operand is less than the right operand.
+                                <b>Less Than (<) <!-- <pre><code></code>
+                                        <</code> </pre> ) -->
+                                </b>: Checks if the left operand is less than the right
+                                operand.
                             </p>
                         </li>
-
-
                         <li>
                             <p class="content_text">
-                               <b> Greater Than or Equal To (>=)</b>: Checks if the left operand is greater than or equal to the right operand.
+                                <b> Greater Than or Equal To (>=)</b>: Checks if the left operand is greater
+                                than or equal to the right operand.
                             </p>
                         </li>
-
                         <li>
                             <p class="content_text">
-                                <b>Less Than or Equal To (<=)</b>: Checks if the left operand is less than or equal to the right operand.
+                                <b>Less Than or Equal To (<=) <!-- <pre><code></code>
+                                        <=</code> </pre> ) -->
+                                </b>: Checks if the left operand is less than or equal
+                                to the right operand.
                             </p>
+                        </li>
+                    </ul><br>
+                    <ul>
+                        <h2>Logical Operators:</h2>
+                        <li>
+                            <p class="content_text"><b>Logical AND(&&)</b>: Returns true if both operands are
+                                true.</p>
+                        </li>
+                        <li>
+                            <p class="content_text"><b>Logical OR(||)</b>: Returns true if at least one operand
+                                is true.</p>
+                        </li>
+                        <li>
+                            <p class="content_text"><b>Logical NOT(!)</b>: Inverts the truth value of an
+                                operand.</p>
+                        </li>
+                    </ul> <br>
+                    <ul>
+                        <h2>Assignment Operators:</h2>
+                        <li>
+                            <p class="content_text"><b>Assignment (=)</b>: Assigns a value to a variable.</p>
+                        </li>
+                        <li>
+                            <p class="content_text"><b>Compound Assignment (+=, -=, *=, /=, %= )</b> : Performs an
+                                operation and
+                                assigns the result to a variable.</p>
                         </li>
                     </ul>
                 </div>
@@ -216,9 +289,11 @@
                 <!-- 1st page side nav end -->
 
                 <!-- 2nd page side nav start-->
-                <li><a class="section_nav_text" href="#whatisvariable">What is Variable?</a></li>
-                <li><a class="section_nav_text" href="#whatisjs">What is JavaScript?</a></li>
-                <li><a class="section_nav_text" href="#historyofjs">History of Javascript</a></li>
+                <!-- <li><a class="section_nav_text" href="#whatisvariable">What is Variable?</a></li> -->
+                <li><a class="section_nav_text" href="#jscomment">JavaScript Comment</a></li>
+                <li><a class="section_nav_text" href="#jsexpression">JavaScript Expression</a></li>
+                <li><a class="section_nav_text" href="#jskeyword">JavaScript Keyword</a></li>
+                <li><a class="section_nav_text" href="#jsoperator">JavaScript Operator</a></li>
                 <!-- 2nd page side nav end -->
 
 

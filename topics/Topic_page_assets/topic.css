@@ -60,7 +60,7 @@ main>nav {
 
 html,
 body {
-    background: #fff;
+    background: rgb(255, 255, 255);
 }
 
 body {
@@ -88,11 +88,17 @@ main {
     grid-template-columns: 4fr 1fr;
     max-width: 100em;
     width: 90%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin-top: 25px; */
 }
 
-#body_content{
-    /* height: 100vh; */
+.container{
+    margin-top: 25px;
+}
+
+.content_section_container{
+    background-color: aliceblue;
+    padding: 10px;
 }
 
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
@@ -387,6 +393,11 @@ footer .btn:hover {
     .content_image {
         height: 150px;
         width: 100%;
+    }
+
+    .content_body{
+        width: 100%;
+        padding: 0;
     }
 
     /* .section-nav{
